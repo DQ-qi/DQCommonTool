@@ -1,0 +1,6 @@
+framework module DQCommonTool {
+  umbrella header "DQCommonTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

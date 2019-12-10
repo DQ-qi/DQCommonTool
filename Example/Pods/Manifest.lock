@@ -1,0 +1,16 @@
+PODS:
+  - DQCommonTool (0.1.0)
+
+DEPENDENCIES:
+  - DQCommonTool (from `../`)
+
+EXTERNAL SOURCES:
+  DQCommonTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DQCommonTool: 36430617f1d4ccb6ff72292968f6fa64837bef87
+
+PODFILE CHECKSUM: 9d2cdeced279e9e581560d6e1e4bdc05bce3e6b7
+
+COCOAPODS: 1.8.4
