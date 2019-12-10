@@ -1,6 +1,6 @@
 # DQCommonTool
 
-[![CI Status](https://img.shields.io/travis/15013781186/DQCommonTool.svg?style=flat)](https://travis-ci.org/15013781186/DQCommonTool)
+[![CI Status](https://img.shields.io/travis/DQ-qi/DQCommonTool.svg?style=flat)](https://travis-ci.org/DQ-qi/DQCommonTool)
 [![Version](https://img.shields.io/cocoapods/v/DQCommonTool.svg?style=flat)](https://cocoapods.org/pods/DQCommonTool)
 [![License](https://img.shields.io/cocoapods/l/DQCommonTool.svg?style=flat)](https://cocoapods.org/pods/DQCommonTool)
 [![Platform](https://img.shields.io/cocoapods/p/DQCommonTool.svg?style=flat)](https://cocoapods.org/pods/DQCommonTool)
@@ -22,7 +22,7 @@ pod 'DQCommonTool'
 
 ## Author
 
-15013781186, dengqi1@lvshou.com
+DQ-qi, 15013781186@163.com
 
 ## License
 
