@@ -14,6 +14,7 @@ public enum DQPrivacyType: Int {
     case photo = 0,  // 相册
     camera,          // 相机
     record,          // 录音
+    postion,         // 定位
     unknow           // 未知
     
 }
@@ -87,6 +88,26 @@ public class DQPermissions {
            break
        }
    }
+    
+    // MARK: 定位权限
+    static func authorzePostionWith(comletion:@escaping (_ status: Bool)->()) {
+        let status = CLLocationManager.authorizationStatus()
+        switch status {
+        case .authorizedAlways:
+            comletion(true)
+        case .authorizedWhenInUse:
+            comletion(true)
+        case .denied:
+            hintPrivacyFunction(.postion)
+        case .restricted:
+            hintPrivacyFunction(.postion)
+        case .notDetermined:
+            comletion(false)
+        default:
+            break
+        }
+        
+    }
    
    // MARK: 跳转到APP系统设置权限界面
    public static func jumpToSystemPrivacySetting() {
@@ -115,7 +136,9 @@ public class DQPermissions {
        case .camera:
            hintStr = "打开相机失败,请在手机设置进行设置"
        case .record:
-            hintStr = "录音未设置,请在手机设置进行设置"
+           hintStr = "录音未设置,请在手机设置进行设置"
+       case .postion:
+           hintStr = "定位未设置,请在手机设置进行设置"
        default:
            break
        }
