@@ -9,12 +9,13 @@
 import Foundation
 
 
-func DQPrintThread(){
+public func DQPrintThread(){
     #if DEBUG
         DQPrint(Thread.current)
     #endif
 }
-func DQPrint(_ message: Any..., file:String = #file, function:String = #function,
+
+public func DQPrint(_ message: Any..., file:String = #file, function:String = #function,
              line:Int = #line) {
     
     #if DEBUG

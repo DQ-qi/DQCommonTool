@@ -90,3 +90,20 @@ public extension UIAlertController {
     }
     
 }
+
+// MARK: - 增加自定义UIAlertController的contentViewController
+public extension UIAlertController {
+    
+    func set(vc: UIViewController?,width: CGFloat? = nil,height: CGFloat? = nil) {
+        guard let vc = vc else {
+            return
+        }
+        setValue(vc, forKey: "contentViewController")
+        if let height = height {
+            vc.preferredContentSize.height = height
+            preferredContentSize.height = height
+            
+        }
+    }
+    
+}

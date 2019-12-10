@@ -8,8 +8,8 @@
 
 import Foundation
 
-//Codable 模型与[String:Any]换转
-class DQCodableTool: NSObject {
+//MARK: Codable 模型与[String:Any]换转
+public class DQCodableTool {
     
    // MARK: [String:Any]转成(Coable)Model
    static func dq_getModelWithAnyFunction<T: Codable>(data:[String: Any],dqClass: T.Type)->T? {
