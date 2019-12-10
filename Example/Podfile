@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DQCommonTool_Example' do
+  pod 'DQCommonTool', :path => '../'
+
+  target 'DQCommonTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
