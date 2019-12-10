@@ -13,21 +13,16 @@
 		523F3D91FF3E3AB2B922500062842752 /* DQCommonTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D90E3874D82DB637E313105A8AB29D92 /* DQCommonTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71C3035FB127AB33E1DDCCC5E55809DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7B4FBA72533E05AC12D6D649B4E2E3A9 /* Pods-DQCommonTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E8FC7EBF85075C45C15C54A4041A7 /* Pods-DQCommonTool_Example-dummy.m */; };
-		AFC3402C239F469D00FBE927 /* DQPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3402B239F469D00FBE927 /* DQPermissions.swift */; };
 		AFC3403B239F475200FBE927 /* Ex_NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3402F239F475200FBE927 /* Ex_NSObject.swift */; };
 		AFC3403E239F475200FBE927 /* Ex_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34032239F475200FBE927 /* Ex_Device.swift */; };
 		AFC3403F239F475200FBE927 /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34033239F475200FBE927 /* Ex_String.swift */; };
-		AFC34040239F475200FBE927 /* Ex_Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34034239F475200FBE927 /* Ex_Window.swift */; };
 		AFC34041239F475200FBE927 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34035239F475200FBE927 /* UIImageExtensions.swift */; };
 		AFC34042239F475200FBE927 /* Ex_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34036239F475200FBE927 /* Ex_UIColor.swift */; };
 		AFC34043239F475200FBE927 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34037239F475200FBE927 /* GlobalFunction.swift */; };
 		AFC34044239F475200FBE927 /* UIImage+VisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34038239F475200FBE927 /* UIImage+VisionDetection.swift */; };
 		AFC34045239F475200FBE927 /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34039239F475200FBE927 /* UIAlertControllerExtensions.swift */; };
 		AFC34048239F5B3D00FBE927 /* DQCodableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34047239F5B3D00FBE927 /* DQCodableFile.swift */; };
-		AFC3404E239F5C4E00FBE927 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3404A239F5C4E00FBE927 /* Reachability.m */; };
-		AFC3404F239F5C4E00FBE927 /* DQNetWorkTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC3404B239F5C4E00FBE927 /* DQNetWorkTool.h */; };
-		AFC34050239F5C4E00FBE927 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC3404C239F5C4E00FBE927 /* Reachability.h */; };
-		AFC34051239F5C4E00FBE927 /* DQNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3404D239F5C4E00FBE927 /* DQNetWorkTool.m */; };
+		AFC34053239F6AE800FBE927 /* DQPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34052239F6AE800FBE927 /* DQPermissions.swift */; };
 		B888E642D09FECC123F4E9ACDD54F5EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D2EEE627C1DB9C2251727CE5B2972B5D /* Pods-DQCommonTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 976EC85A3D7A46BD55E70515CCCF871A /* Pods-DQCommonTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F91C878918F209DBEC1DD029EA235846 /* DQCommonTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA7207ED4E46CF98FC79CC5D3400A3C /* DQCommonTool-dummy.m */; };
@@ -70,21 +65,16 @@
 		A5D1DD256AD717CA24D33C08B94A667D /* Pods-DQCommonTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DQCommonTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A920F9651D21F037B91F464AA7167EF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD71559D23B5E3682871FADFBDB8C3E3 /* DQCommonTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DQCommonTool-Info.plist"; sourceTree = "<group>"; };
-		AFC3402B239F469D00FBE927 /* DQPermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQPermissions.swift; sourceTree = "<group>"; };
 		AFC3402F239F475200FBE927 /* Ex_NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_NSObject.swift; sourceTree = "<group>"; };
 		AFC34032239F475200FBE927 /* Ex_Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Device.swift; sourceTree = "<group>"; };
 		AFC34033239F475200FBE927 /* Ex_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
-		AFC34034239F475200FBE927 /* Ex_Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Window.swift; sourceTree = "<group>"; };
 		AFC34035239F475200FBE927 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		AFC34036239F475200FBE927 /* Ex_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_UIColor.swift; sourceTree = "<group>"; };
 		AFC34037239F475200FBE927 /* GlobalFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunction.swift; sourceTree = "<group>"; };
 		AFC34038239F475200FBE927 /* UIImage+VisionDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+VisionDetection.swift"; sourceTree = "<group>"; };
 		AFC34039239F475200FBE927 /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		AFC34047239F5B3D00FBE927 /* DQCodableFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQCodableFile.swift; sourceTree = "<group>"; };
-		AFC3404A239F5C4E00FBE927 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		AFC3404B239F5C4E00FBE927 /* DQNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNetWorkTool.h; sourceTree = "<group>"; };
-		AFC3404C239F5C4E00FBE927 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		AFC3404D239F5C4E00FBE927 /* DQNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNetWorkTool.m; sourceTree = "<group>"; };
+		AFC34052239F6AE800FBE927 /* DQPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQPermissions.swift; sourceTree = "<group>"; };
 		B66066D8B54A365C36D144830804F683 /* DQCommonTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DQCommonTool.modulemap; sourceTree = "<group>"; };
 		B706EC06A2207E1DD651B5F45E1E85D3 /* Pods-DQCommonTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DQCommonTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAE7EAA67F00F884F015A80D4A40C922 /* Pods-DQCommonTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -178,7 +168,6 @@
 		479492885F1C1E2029928B0528A489B1 /* DQCommonTool */ = {
 			isa = PBXGroup;
 			children = (
-				AFC34049239F5C4E00FBE927 /* DQNetWorkTool */,
 				AFC34046239F5B3D00FBE927 /* DQCodable */,
 				AFC3402D239F475200FBE927 /* WpExtension */,
 				AFC3402A239F469D00FBE927 /* DQPermissions */,
@@ -209,7 +198,7 @@
 		AFC3402A239F469D00FBE927 /* DQPermissions */ = {
 			isa = PBXGroup;
 			children = (
-				AFC3402B239F469D00FBE927 /* DQPermissions.swift */,
+				AFC34052239F6AE800FBE927 /* DQPermissions.swift */,
 			);
 			name = DQPermissions;
 			path = DQCommonTool/Classes/DQPermissions;
@@ -221,7 +210,6 @@
 				AFC3402F239F475200FBE927 /* Ex_NSObject.swift */,
 				AFC34032239F475200FBE927 /* Ex_Device.swift */,
 				AFC34033239F475200FBE927 /* Ex_String.swift */,
-				AFC34034239F475200FBE927 /* Ex_Window.swift */,
 				AFC34036239F475200FBE927 /* Ex_UIColor.swift */,
 				AFC34037239F475200FBE927 /* GlobalFunction.swift */,
 				AFC34039239F475200FBE927 /* UIAlertControllerExtensions.swift */,
@@ -238,17 +226,6 @@
 				AFC34047239F5B3D00FBE927 /* DQCodableFile.swift */,
 			);
 			path = DQCodable;
-			sourceTree = "<group>";
-		};
-		AFC34049239F5C4E00FBE927 /* DQNetWorkTool */ = {
-			isa = PBXGroup;
-			children = (
-				AFC3404A239F5C4E00FBE927 /* Reachability.m */,
-				AFC3404C239F5C4E00FBE927 /* Reachability.h */,
-				AFC3404B239F5C4E00FBE927 /* DQNetWorkTool.h */,
-				AFC3404D239F5C4E00FBE927 /* DQNetWorkTool.m */,
-			);
-			path = DQNetWorkTool;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -304,8 +281,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC34050239F5C4E00FBE927 /* Reachability.h in Headers */,
-				AFC3404F239F5C4E00FBE927 /* DQNetWorkTool.h in Headers */,
 				523F3D91FF3E3AB2B922500062842752 /* DQCommonTool-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,16 +431,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC3404E239F5C4E00FBE927 /* Reachability.m in Sources */,
 				AFC3403B239F475200FBE927 /* Ex_NSObject.swift in Sources */,
 				AFC34045239F475200FBE927 /* UIAlertControllerExtensions.swift in Sources */,
 				AFC34044239F475200FBE927 /* UIImage+VisionDetection.swift in Sources */,
 				AFC3403E239F475200FBE927 /* Ex_Device.swift in Sources */,
-				AFC34051239F5C4E00FBE927 /* DQNetWorkTool.m in Sources */,
 				F91C878918F209DBEC1DD029EA235846 /* DQCommonTool-dummy.m in Sources */,
 				AFC34048239F5B3D00FBE927 /* DQCodableFile.swift in Sources */,
-				AFC34040239F475200FBE927 /* Ex_Window.swift in Sources */,
-				AFC3402C239F469D00FBE927 /* DQPermissions.swift in Sources */,
+				AFC34053239F6AE800FBE927 /* DQPermissions.swift in Sources */,
 				AFC3403F239F475200FBE927 /* Ex_String.swift in Sources */,
 				AFC34041239F475200FBE927 /* UIImageExtensions.swift in Sources */,
 				AFC34042239F475200FBE927 /* Ex_UIColor.swift in Sources */,
