@@ -2,7 +2,7 @@
 //  DQPermission.swift
 //  DQCommonTool
 //
-//  Created by HXSMac on 2019/12/10.
+//  Created by DQ on 2019/12/10.
 //
 
 import Foundation
@@ -16,7 +16,6 @@ public enum DQPrivacyType: Int {
     record,          // 录音
     postion,         // 定位
     unknow           // 未知
-    
 }
 
 public class DQPermissions {
@@ -90,7 +89,7 @@ public class DQPermissions {
    }
     
     // MARK: 定位权限
-    static func authorzePostionWith(comletion:@escaping (_ status: Bool)->()) {
+    public static func authorzePostionWith(comletion:@escaping (_ status: Bool)->()) {
         let status = CLLocationManager.authorizationStatus()
         switch status {
         case .authorizedAlways:

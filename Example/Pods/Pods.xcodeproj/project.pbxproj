@@ -15,6 +15,7 @@
 		7B4FBA72533E05AC12D6D649B4E2E3A9 /* Pods-DQCommonTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E8FC7EBF85075C45C15C54A4041A7 /* Pods-DQCommonTool_Example-dummy.m */; };
 		A5B38576239FDF4100A075E3 /* DQCodableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B38575239FDF4100A075E3 /* DQCodableFile.swift */; };
 		A5B38579239FDFF300A075E3 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B38578239FDFF300A075E3 /* DatePickerViewController.swift */; };
+		AFA0349223A0DD39001DA3EC /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0349123A0DD39001DA3EC /* PickerViewController.swift */; };
 		AFC3403B239F475200FBE927 /* Ex_NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3402F239F475200FBE927 /* Ex_NSObject.swift */; };
 		AFC3403E239F475200FBE927 /* Ex_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34032239F475200FBE927 /* Ex_Device.swift */; };
 		AFC3403F239F475200FBE927 /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34033239F475200FBE927 /* Ex_String.swift */; };
@@ -68,6 +69,7 @@
 		A5D1DD256AD717CA24D33C08B94A667D /* Pods-DQCommonTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DQCommonTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A920F9651D21F037B91F464AA7167EF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD71559D23B5E3682871FADFBDB8C3E3 /* DQCommonTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DQCommonTool-Info.plist"; sourceTree = "<group>"; };
+		AFA0349123A0DD39001DA3EC /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		AFC3402F239F475200FBE927 /* Ex_NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_NSObject.swift; sourceTree = "<group>"; };
 		AFC34032239F475200FBE927 /* Ex_Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Device.swift; sourceTree = "<group>"; };
 		AFC34033239F475200FBE927 /* Ex_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		479492885F1C1E2029928B0528A489B1 /* DQCommonTool */ = {
 			isa = PBXGroup;
 			children = (
+				AFC3405523A0810100FBE927 /* PickerViewController */,
 				A5B38577239FDF9B00A075E3 /* DataPicker */,
 				A5B38574239FDF4000A075E3 /* DQCodable */,
 				AFC3402D239F475200FBE927 /* WpExtension */,
@@ -239,6 +242,15 @@
 			);
 			name = WpExtension;
 			path = DQCommonTool/Classes/WpExtension;
+			sourceTree = "<group>";
+		};
+		AFC3405523A0810100FBE927 /* PickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFA0349123A0DD39001DA3EC /* PickerViewController.swift */,
+			);
+			name = PickerViewController;
+			path = DQCommonTool/Classes/PickerViewController;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -448,6 +460,7 @@
 				AFC3403B239F475200FBE927 /* Ex_NSObject.swift in Sources */,
 				AFC34045239F475200FBE927 /* UIAlertControllerExtensions.swift in Sources */,
 				AFC34044239F475200FBE927 /* UIImage+VisionDetection.swift in Sources */,
+				AFA0349223A0DD39001DA3EC /* PickerViewController.swift in Sources */,
 				AFC3403E239F475200FBE927 /* Ex_Device.swift in Sources */,
 				F91C878918F209DBEC1DD029EA235846 /* DQCommonTool-dummy.m in Sources */,
 				A5B38576239FDF4100A075E3 /* DQCodableFile.swift in Sources */,

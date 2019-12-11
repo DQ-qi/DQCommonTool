@@ -10,13 +10,15 @@ import UIKit
 import DQCommonTool
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(tableView)
         self.title = "DQCommonTool"
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,7 +33,7 @@ class ViewController: UIViewController {
         tableView.tableFooterView = UIView()
         return tableView
     }()
-
+    
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
@@ -55,18 +57,30 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         return cell ?? UITableViewCell.init(style: .default, reuseIdentifier: "cell")
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = Color.gray
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.section == 0 {
             switch indexPath.row {
             case 0:
+                var currentDate = Date()
                 let alertCtl = UIAlertController.init(title: "时间选择器", message: "请选择时间", preferredStyle: .alert)
-                alertCtl.addDatePicker(model: .time, date: Date()) { (date) in
-                    DQPrint(date)
+                alertCtl.addDatePicker(model: .time, date: currentDate) { (date) in
+                    currentDate = date
+                    DQPrint("选中时间:",currentDate)
                 }
                 
                 alertCtl.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
-                    
+                    DQPrint("选中时间:",currentDate)
                 }
                 alertCtl.show()
             case 1:
@@ -99,10 +113,29 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
                     
                 }
                 alertCtl.show()
+                
             default:
                 break
             }
             
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                
+                let alertCtl = UIAlertController.init(title: "性别选择器", message: "请选择性别", preferredStyle: .alert)
+                
+                let values = [["男","女"]]
+                alertCtl.addPickerView(values: values, initialSelection: nil) { (pickerViewVc, pickerview, index, values) in
+                    print("选择的性别:"+"\(index)")
+                }
+                
+                alertCtl.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
+                    
+                }
+                alertCtl.show()
+            default:
+                break
+            }
         }
     }
     
@@ -111,6 +144,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
 class ViewModel {
     
     var dataArr = [
-        ["请选择时间","请选择年月日","请选择日期时分","请选择时分"]]
+        ["请选择时间","请选择年月日","请选择日期时分","请选择时分"],
+        ["性别选择"]
+    ]
     
 }
