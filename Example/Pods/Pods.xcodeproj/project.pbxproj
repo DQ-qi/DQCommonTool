@@ -16,6 +16,9 @@
 		A5B38576239FDF4100A075E3 /* DQCodableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B38575239FDF4100A075E3 /* DQCodableFile.swift */; };
 		A5B38579239FDFF300A075E3 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B38578239FDFF300A075E3 /* DatePickerViewController.swift */; };
 		AFA0349223A0DD39001DA3EC /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0349123A0DD39001DA3EC /* PickerViewController.swift */; };
+		AFB3A14923A46E8A00CF90D2 /* PhotoLibraryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3A14823A46E8A00CF90D2 /* PhotoLibraryPickerViewController.swift */; };
+		AFB3A14C23A47F9600CF90D2 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3A14B23A47F9500CF90D2 /* Assets.swift */; };
+		AFB3A15023A485E700CF90D2 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3A14F23A485E700CF90D2 /* Array+Extensions.swift */; };
 		AFC3403B239F475200FBE927 /* Ex_NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3402F239F475200FBE927 /* Ex_NSObject.swift */; };
 		AFC3403E239F475200FBE927 /* Ex_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34032239F475200FBE927 /* Ex_Device.swift */; };
 		AFC3403F239F475200FBE927 /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC34033239F475200FBE927 /* Ex_String.swift */; };
@@ -70,6 +73,9 @@
 		A920F9651D21F037B91F464AA7167EF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD71559D23B5E3682871FADFBDB8C3E3 /* DQCommonTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DQCommonTool-Info.plist"; sourceTree = "<group>"; };
 		AFA0349123A0DD39001DA3EC /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		AFB3A14823A46E8A00CF90D2 /* PhotoLibraryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerViewController.swift; sourceTree = "<group>"; };
+		AFB3A14B23A47F9500CF90D2 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		AFB3A14F23A485E700CF90D2 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		AFC3402F239F475200FBE927 /* Ex_NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_NSObject.swift; sourceTree = "<group>"; };
 		AFC34032239F475200FBE927 /* Ex_Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_Device.swift; sourceTree = "<group>"; };
 		AFC34033239F475200FBE927 /* Ex_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 		479492885F1C1E2029928B0528A489B1 /* DQCommonTool */ = {
 			isa = PBXGroup;
 			children = (
+				AFB3A14723A46E1900CF90D2 /* PhotoLibraryPiceker */,
 				AFC3405523A0810100FBE927 /* PickerViewController */,
 				A5B38577239FDF9B00A075E3 /* DataPicker */,
 				A5B38574239FDF4000A075E3 /* DQCodable */,
@@ -219,6 +226,24 @@
 			path = DQCommonTool/Classes/DataPicker;
 			sourceTree = "<group>";
 		};
+		AFB3A14723A46E1900CF90D2 /* PhotoLibraryPiceker */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3A14A23A47F9500CF90D2 /* Managers */,
+				AFB3A14823A46E8A00CF90D2 /* PhotoLibraryPickerViewController.swift */,
+			);
+			name = PhotoLibraryPiceker;
+			path = DQCommonTool/Classes/PhotoLibraryPiceker;
+			sourceTree = "<group>";
+		};
+		AFB3A14A23A47F9500CF90D2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3A14B23A47F9500CF90D2 /* Assets.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		AFC3402A239F469D00FBE927 /* DQPermissions */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +260,7 @@
 				AFC34032239F475200FBE927 /* Ex_Device.swift */,
 				AFC34033239F475200FBE927 /* Ex_String.swift */,
 				AFC34036239F475200FBE927 /* Ex_UIColor.swift */,
+				AFB3A14F23A485E700CF90D2 /* Array+Extensions.swift */,
 				AFC34037239F475200FBE927 /* GlobalFunction.swift */,
 				AFC34039239F475200FBE927 /* UIAlertControllerExtensions.swift */,
 				AFC34035239F475200FBE927 /* UIImageExtensions.swift */,
@@ -465,9 +491,12 @@
 				F91C878918F209DBEC1DD029EA235846 /* DQCommonTool-dummy.m in Sources */,
 				A5B38576239FDF4100A075E3 /* DQCodableFile.swift in Sources */,
 				AFC34053239F6AE800FBE927 /* DQPermissions.swift in Sources */,
+				AFB3A14C23A47F9600CF90D2 /* Assets.swift in Sources */,
 				AFC3403F239F475200FBE927 /* Ex_String.swift in Sources */,
 				A5B38579239FDFF300A075E3 /* DatePickerViewController.swift in Sources */,
+				AFB3A15023A485E700CF90D2 /* Array+Extensions.swift in Sources */,
 				AFC34041239F475200FBE927 /* UIImageExtensions.swift in Sources */,
+				AFB3A14923A46E8A00CF90D2 /* PhotoLibraryPickerViewController.swift in Sources */,
 				AFC34042239F475200FBE927 /* Ex_UIColor.swift in Sources */,
 				AFC34043239F475200FBE927 /* GlobalFunction.swift in Sources */,
 			);
