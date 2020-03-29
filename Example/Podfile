@@ -1,8 +1,8 @@
+platform :ios,'9.0'
 use_frameworks!
-
+inhibit_all_warnings!
 target 'DQCommonTool_Example' do
   pod 'DQCommonTool', :path => '../'
-
   target 'DQCommonTool_Tests' do
     inherit! :search_paths
 

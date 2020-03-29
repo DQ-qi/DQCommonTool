@@ -136,6 +136,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
             default:
                 break
             }
+        } else if (indexPath.section == 2) {
+            self.navigationController?.pushViewController(DQPageController(), animated: true);
         }
     }
     
@@ -145,7 +147,8 @@ class ViewModel {
     
     var dataArr = [
         ["请选择时间","请选择年月日","请选择日期时分","请选择时分"],
-        ["性别选择"]
+        ["性别选择"],
+        ["分页控制器"]
     ]
     
 }
