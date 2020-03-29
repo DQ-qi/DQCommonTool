@@ -133,11 +133,21 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
                     
                 }
                 alertCtl.show()
+            case 1:
+                let alertCtl = UIAlertController.init(title: "图片选择器", message: "请选择图片", preferredStyle: .alert)
+               
+                alertCtl.addPhotoLibraryPicker(flow: .vertical, paging: true, selection: .multiple(action: { (asstes) in
+                    
+                }))
+                alertCtl.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
+                    
+                }
+                alertCtl.show()
             default:
                 break
             }
         } else if (indexPath.section == 2) {
-            self.navigationController?.pushViewController(DQPageController(), animated: true);
+//            self.navigationController?.pushViewController(DQPageController(), animated: true);
         }
     }
     
