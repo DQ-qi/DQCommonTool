@@ -19,10 +19,7 @@ public extension UIAlertController {
             vc.preferredContentSize.width = vc.preferredSize.width * 0.8
         } else {
             //var height = vc.preferredSize.height
-            
-            
-            
-            vc.preferredContentSize.height = vc.preferredSize.height*0.8
+            vc.preferredContentSize.height = vc.preferredSize.height*0.6
         }
         set(vc: vc)
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DQCommonTool
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+    let launchScreen = DQLaunchScreen()
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        
+//        DQLaunchScreen.
+        launchScreen.showFunction()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            self.launchScreen.dissFunction()
+        }
         
         return true
     }

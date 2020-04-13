@@ -11,6 +11,7 @@
 		1D73F5FC98D63F367129175F92288FBE /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778E7861E48BCF6C01F361C75F390C3 /* UIImageExtensions.swift */; };
 		271D6D91BAAD9C7271A78E60F0FF8029 /* Pods-DQCommonTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B06D23B82409D72B54BF91AE4727A /* Pods-DQCommonTool_Tests-dummy.m */; };
 		283A8AF704552AA15E6CF4A44358C739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+<<<<<<< Updated upstream
 		2A2A4EA69C24BDB38D3D214731A5FAE0 /* DQPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B9DBE2AB55678CC708C10A767A294 /* DQPageController.swift */; };
 		31795BFD3C55A42F29D9DA833B412B7E /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE240959084FB93E77CAA721DF72CF3 /* GlobalFunction.swift */; };
 		3777E755AE00F81477301DE4459EB730 /* Pods-DQCommonTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B14680C96A120621AA08D8896DBB18 /* Pods-DQCommonTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +33,31 @@
 		E443F9AD03E983974E88BBEEE77EB2A8 /* UIImage+VisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497FF3B56CCE62B5332D4B560A7D7D0 /* UIImage+VisionDetection.swift */; };
 		E7206441F3B77067A5B6E757C5C2D9AD /* PhotoLibraryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135765D37EB64EE3FA9C53ABF82A9A65 /* PhotoLibraryPickerViewController.swift */; };
 		F030E80527CB6960CB9D4819E098E4B9 /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639260B9683E861558147954A70FD253 /* UIAlertControllerExtensions.swift */; };
+=======
+		31DB4292BD82DEEEDCE9F3C8CF22A751 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7D9A8E12B8D5C87A918830C57DCA9 /* GlobalFunction.swift */; };
+		3777E755AE00F81477301DE4459EB730 /* Pods-DQCommonTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B14680C96A120621AA08D8896DBB18 /* Pods-DQCommonTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397342FCAA276CB6BB80D1AB665B1D15 /* DQCommonTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C271995E7641AD0B357E39C536ADE28 /* DQCommonTool-dummy.m */; };
+		3FECDA9794AD538B1D1E62958FA56E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		40CFCDD663894AA236F58E2BEA73BA45 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F854EE943BF5B3836EF1415447929D6 /* UIImageExtensions.swift */; };
+		5791D4F920F6B053E632CFB9A7FC6610 /* PhotoLibraryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82708123272EE7FAAC454ACED13813AF /* PhotoLibraryPickerViewController.swift */; };
+		5A8327F879217DEA995F2A56F307A807 /* Ex_NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC946E041D0CCEBD493C112CFA45F66 /* Ex_NSObject.swift */; };
+		64BE2BE8C6B48287D85B3EAAABEBF544 /* Ex_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7CB25A9756C78ECD87F682C2FEFD4 /* Ex_String.swift */; };
+		7141C5D58CFC8327AA533E261C825AC4 /* DQPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7A1C571D35E0430FA9A30F6DE67A5C /* DQPermissions.swift */; };
+		7B4FBA72533E05AC12D6D649B4E2E3A9 /* Pods-DQCommonTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E8FC7EBF85075C45C15C54A4041A7 /* Pods-DQCommonTool_Example-dummy.m */; };
+		7C686A21844D078360F8CA789E58C7F1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD554A98452E56DC882C39F585D75B /* DatePickerViewController.swift */; };
+		80AF975CFC5B2E074C40882C84E3148C /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1061E432A24BFB0F55BE9DD767D4A /* PickerViewController.swift */; };
+		869A58B88EC60AC3A2D2F5074DBF6101 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4339FDBC53C6C7F08ED66F5F3AEB0F0 /* Array+Extensions.swift */; };
+		97811F18F5797A2775F1638925372DB6 /* Ex_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A958513D81C918404ABD18063C40C1 /* Ex_UIColor.swift */; };
+		98818646354D5D121B3258FB41321E69 /* Ex_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC96802009F226C9DD067384B8C83FE /* Ex_Device.swift */; };
+		A1C2E2E99EA15249D77EE0CEEAF55FB3 /* UIImage+VisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE89C9DFED51B4927BD431C902CABCB /* UIImage+VisionDetection.swift */; };
+		A2649D2FD598DC9C4DAF65661F3E8B21 /* DQCommonTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C57126E938A875B7D0A09BFEE6C7462 /* DQCommonTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A29F5FAE7FC604450943E1D4D77B9269 /* DQCodableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48388746D3867AB6BE805B7F99785300 /* DQCodableFile.swift */; };
+		A36421FCE491D36FD55320FD31E2CA08 /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9B53CE1DEB0DADB515F311AED4DC48 /* UIAlertControllerExtensions.swift */; };
+		B81336F56D2A2DDBE36062519D24F2D8 /* DQLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1F6CC35DCFC1F18286E15E3CF7CFA /* DQLaunchScreen.swift */; };
+		B888E642D09FECC123F4E9ACDD54F5EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D0AA039282399F952369292DF0C514F1 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C4F10CE2EEE8E72F42B876CA014CE /* Assets.swift */; };
+		D2EEE627C1DB9C2251727CE5B2972B5D /* Pods-DQCommonTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 976EC85A3D7A46BD55E70515CCCF871A /* Pods-DQCommonTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		047B06D23B82409D72B54BF91AE4727A /* Pods-DQCommonTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DQCommonTool_Tests-dummy.m"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		04A20415D6335CAB03FC6F9C63E888CF /* DQCommonTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DQCommonTool-prefix.pch"; sourceTree = "<group>"; };
 		0E3ADBCE8FDF9D29ABC47522C6219413 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		13183E90E5C03CAEEC85FF75BDC2DF48 /* DQCommonTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DQCommonTool-umbrella.h"; sourceTree = "<group>"; };
@@ -61,8 +88,19 @@
 		1490D9C64FB6778ACFCEF06B288D6EC5 /* PickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		248F66966B0A27C2AFBB2177377F3CB0 /* Pods-DQCommonTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DQCommonTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2704B850435819EFE102712F52A397F3 /* DQCommonTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DQCommonTool-Info.plist"; sourceTree = "<group>"; };
+=======
+		04AD554A98452E56DC882C39F585D75B /* DatePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		0D8C4F10CE2EEE8E72F42B876CA014CE /* Assets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1C271995E7641AD0B357E39C536ADE28 /* DQCommonTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DQCommonTool-dummy.m"; sourceTree = "<group>"; };
+		1EA1F6CC35DCFC1F18286E15E3CF7CFA /* DQLaunchScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DQLaunchScreen.swift; sourceTree = "<group>"; };
+		1F854EE943BF5B3836EF1415447929D6 /* UIImageExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		248F66966B0A27C2AFBB2177377F3CB0 /* Pods-DQCommonTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DQCommonTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B7A1C571D35E0430FA9A30F6DE67A5C /* DQPermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DQPermissions.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36A958513D81C918404ABD18063C40C1 /* Ex_UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_UIColor.swift; sourceTree = "<group>"; };
 		3984B5CC7B8B00179294760297710EAB /* Pods-DQCommonTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		3A763D300E28F8CA386B6FB8ECCA927C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		491E3B08933350B149F87923B12893FF /* Pods_DQCommonTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DQCommonTool_Tests.framework; path = "Pods-DQCommonTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE0ECB1A910D9199507BAC3D01FD164 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
@@ -86,20 +124,55 @@
 		A397085011643DBD405528966DA94F36 /* DQCodableFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DQCodableFile.swift; sourceTree = "<group>"; };
 		A5D1DD256AD717CA24D33C08B94A667D /* Pods-DQCommonTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DQCommonTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A8C8ACAED2DD13165487C7DDA64472B8 /* Ex_String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
+=======
+		3EE7CB25A9756C78ECD87F682C2FEFD4 /* Ex_String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_String.swift; sourceTree = "<group>"; };
+		40D7D9A8E12B8D5C87A918830C57DCA9 /* GlobalFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GlobalFunction.swift; sourceTree = "<group>"; };
+		48388746D3867AB6BE805B7F99785300 /* DQCodableFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DQCodableFile.swift; sourceTree = "<group>"; };
+		491E3B08933350B149F87923B12893FF /* Pods_DQCommonTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DQCommonTool_Tests.framework; path = "Pods-DQCommonTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9B53CE1DEB0DADB515F311AED4DC48 /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		4FB938A0A0BC0D49116330F95AB1A93E /* Pods-DQCommonTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DQCommonTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6554AEE7C920782A9D59C5542F921094 /* DQCommonTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DQCommonTool-prefix.pch"; sourceTree = "<group>"; };
+		74B901CC04663D042C275736A04437F1 /* Pods-DQCommonTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DQCommonTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7AE89C9DFED51B4927BD431C902CABCB /* UIImage+VisionDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+VisionDetection.swift"; sourceTree = "<group>"; };
+		82708123272EE7FAAC454ACED13813AF /* PhotoLibraryPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerViewController.swift; sourceTree = "<group>"; };
+		89416B4E477373740BE6493E6F5E45A9 /* Pods-DQCommonTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DQCommonTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		898527CA67687B1A1656E83EC0B59F39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8BE1061E432A24BFB0F55BE9DD767D4A /* PickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		8C57126E938A875B7D0A09BFEE6C7462 /* DQCommonTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DQCommonTool-umbrella.h"; sourceTree = "<group>"; };
+		8D47D0BB01F5A13A51442645345F5841 /* DQCommonTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DQCommonTool.framework; path = DQCommonTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1549B562742B58A9430D07B0CC644D /* DQCommonTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DQCommonTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96246705FE415958D5B8EA2E005ACE37 /* Pods_DQCommonTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DQCommonTool_Example.framework; path = "Pods-DQCommonTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		976EC85A3D7A46BD55E70515CCCF871A /* Pods-DQCommonTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DQCommonTool_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5D1DD256AD717CA24D33C08B94A667D /* Pods-DQCommonTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DQCommonTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AAC946E041D0CCEBD493C112CFA45F66 /* Ex_NSObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_NSObject.swift; sourceTree = "<group>"; };
+		AAC96802009F226C9DD067384B8C83FE /* Ex_Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_Device.swift; sourceTree = "<group>"; };
+		B4339FDBC53C6C7F08ED66F5F3AEB0F0 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		B706EC06A2207E1DD651B5F45E1E85D3 /* Pods-DQCommonTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DQCommonTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B73C4320BD24F6C6B7B64EC8A0B68380 /* Ex_Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_Device.swift; sourceTree = "<group>"; };
 		BAE7EAA67F00F884F015A80D4A40C922 /* Pods-DQCommonTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BB858CE42EE16D624DB99FDC37126585 /* DQCommonTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DQCommonTool.release.xcconfig; sourceTree = "<group>"; };
 		BEB7F7F7D1C5C43DE3C8A599F0789CFB /* Ex_NSObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ex_NSObject.swift; sourceTree = "<group>"; };
 		C13985A2EA8529734D8960BDD090D1DB /* Pods-DQCommonTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DQCommonTool_Tests.modulemap"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		C778E7861E48BCF6C01F361C75F390C3 /* UIImageExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		D04C730B66F6F6D05FD820FFFE8EE72E /* DQPermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DQPermissions.swift; sourceTree = "<group>"; };
 		D4EF6F371CF423580FBFF083CEC9B940 /* Pods-DQCommonTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Tests-Info.plist"; sourceTree = "<group>"; };
 		D6B14680C96A120621AA08D8896DBB18 /* Pods-DQCommonTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DQCommonTool_Example-umbrella.h"; sourceTree = "<group>"; };
+=======
+		CA1F713B255E8D59CEE21B67E4C8BE82 /* DQCommonTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DQCommonTool-Info.plist"; sourceTree = "<group>"; };
+		CB5D924545B54F0EAC063C657050B92D /* DQCommonTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DQCommonTool.release.xcconfig; sourceTree = "<group>"; };
+		D4EF6F371CF423580FBFF083CEC9B940 /* Pods-DQCommonTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Tests-Info.plist"; sourceTree = "<group>"; };
+		D6B14680C96A120621AA08D8896DBB18 /* Pods-DQCommonTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DQCommonTool_Example-umbrella.h"; sourceTree = "<group>"; };
+		DBD230D10B1517BADCB0EDD1F305F249 /* DQCommonTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DQCommonTool.modulemap; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		DC3824D3658B1CFA536C8E7CBDEE2CF8 /* Pods-DQCommonTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DQCommonTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EA29EA35A884E7BB4D0E39A773696B4A /* DQCommonTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DQCommonTool.debug.xcconfig; sourceTree = "<group>"; };
 		F4FE90376B0F1D9B5E8AA3831EBDA1C6 /* Pods-DQCommonTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DQCommonTool_Example.modulemap"; sourceTree = "<group>"; };
 		F8D6EA89A01A08E5DBC650A7FFBC5F47 /* Pods-DQCommonTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DQCommonTool_Example-Info.plist"; sourceTree = "<group>"; };
 		F92E8FC7EBF85075C45C15C54A4041A7 /* Pods-DQCommonTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DQCommonTool_Example-dummy.m"; sourceTree = "<group>"; };
+		FD2541C395317C1ABEC6FBB07409E1D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +203,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
 		049D21B05D8A4E68401671ADC9B7078C /* DQCodable */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +211,33 @@
 			);
 			name = DQCodable;
 			path = DQCommonTool/Classes/DQCodable;
+=======
+		0CF38CE88C12F2BE04F28D7D9F6D0A32 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8E1549B562742B58A9430D07B0CC644D /* DQCommonTool.podspec */,
+				898527CA67687B1A1656E83EC0B59F39 /* LICENSE */,
+				FD2541C395317C1ABEC6FBB07409E1D6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		10F1C7EDA734F5A7FE6DDBA3E5354F0F /* DQCommonTool */ = {
+			isa = PBXGroup;
+			children = (
+				366B7993ACDFB661BE8A744436208F42 /* DataPicker */,
+				415BC8623A9097841F6E6AB7600107C2 /* DQCodable */,
+				8E3D6C6F2A94170ACBF9DB586B377C97 /* DQLaunchScreen */,
+				D63345A35A621E7DA985A7295073F8CB /* DQPermissions */,
+				5509914232CF4F6873DDC9180664B716 /* PhotoLibraryPiceker */,
+				6FCB607A575C80AF61594B6010A8E94B /* PickerViewController */,
+				0CF38CE88C12F2BE04F28D7D9F6D0A32 /* Pod */,
+				42A7410B6EDEBBFA22EFC3921F511F01 /* Support Files */,
+				74FE06352F46EA3398C39B4A3289A342 /* WpExtension */,
+			);
+			name = DQCommonTool;
+			path = ../..;
+>>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
 		1545265D2157C575DB3D8E0DEA0737C6 /* Pods-DQCommonTool_Tests */ = {
@@ -155,6 +256,7 @@
 			path = "Target Support Files/Pods-DQCommonTool_Tests";
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		195DD48BC287513C1F6CE3100456E0E4 /* DQCommonTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,18 +280,30 @@
 				7BA8E81B3E69A5B81779B051522B61B9 /* DQCommonTool.podspec */,
 				3A763D300E28F8CA386B6FB8ECCA927C /* LICENSE */,
 				4CE0ECB1A910D9199507BAC3D01FD164 /* README.md */,
+=======
+		366B7993ACDFB661BE8A744436208F42 /* DataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				04AD554A98452E56DC882C39F585D75B /* DatePickerViewController.swift */,
+>>>>>>> Stashed changes
 			);
-			name = Pod;
+			name = DataPicker;
+			path = DQCommonTool/Classes/DataPicker;
 			sourceTree = "<group>";
 		};
 		3FA7A6FC0703CDBCA24E7957AC236D4D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				195DD48BC287513C1F6CE3100456E0E4 /* DQCommonTool */,
+=======
+				10F1C7EDA734F5A7FE6DDBA3E5354F0F /* DQCommonTool */,
+>>>>>>> Stashed changes
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		61980B2DC5E831188C04039CEC2543D0 /* PhotoLibraryPiceker */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,26 +344,108 @@
 			isa = PBXGroup;
 			children = (
 				5CF8C08F5D30C29CB4786973A72DBAA2 /* DatePickerViewController.swift */,
+=======
+		415BC8623A9097841F6E6AB7600107C2 /* DQCodable */ = {
+			isa = PBXGroup;
+			children = (
+				48388746D3867AB6BE805B7F99785300 /* DQCodableFile.swift */,
 			);
-			name = DataPicker;
-			path = DQCommonTool/Classes/DataPicker;
+			name = DQCodable;
+			path = DQCommonTool/Classes/DQCodable;
 			sourceTree = "<group>";
 		};
+		42A7410B6EDEBBFA22EFC3921F511F01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBD230D10B1517BADCB0EDD1F305F249 /* DQCommonTool.modulemap */,
+				1C271995E7641AD0B357E39C536ADE28 /* DQCommonTool-dummy.m */,
+				CA1F713B255E8D59CEE21B67E4C8BE82 /* DQCommonTool-Info.plist */,
+				6554AEE7C920782A9D59C5542F921094 /* DQCommonTool-prefix.pch */,
+				8C57126E938A875B7D0A09BFEE6C7462 /* DQCommonTool-umbrella.h */,
+				EA29EA35A884E7BB4D0E39A773696B4A /* DQCommonTool.debug.xcconfig */,
+				CB5D924545B54F0EAC063C657050B92D /* DQCommonTool.release.xcconfig */,
+>>>>>>> Stashed changes
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DQCommonTool";
+			sourceTree = "<group>";
+		};
+<<<<<<< Updated upstream
 		A986725D618F93C653FC5189BF774F76 /* DQPermissions */ = {
 			isa = PBXGroup;
 			children = (
 				D04C730B66F6F6D05FD820FFFE8EE72E /* DQPermissions.swift */,
+=======
+		5509914232CF4F6873DDC9180664B716 /* PhotoLibraryPiceker */ = {
+			isa = PBXGroup;
+			children = (
+				82708123272EE7FAAC454ACED13813AF /* PhotoLibraryPickerViewController.swift */,
+				E4427B9273AC1FC82AF3C6704D8ED56B /* Managers */,
 			);
-			name = DQPermissions;
-			path = DQCommonTool/Classes/DQPermissions;
+			name = PhotoLibraryPiceker;
+			path = DQCommonTool/Classes/PhotoLibraryPiceker;
 			sourceTree = "<group>";
 		};
+		6FCB607A575C80AF61594B6010A8E94B /* PickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BE1061E432A24BFB0F55BE9DD767D4A /* PickerViewController.swift */,
+			);
+			name = PickerViewController;
+			path = DQCommonTool/Classes/PickerViewController;
+			sourceTree = "<group>";
+		};
+		74FE06352F46EA3398C39B4A3289A342 /* WpExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B4339FDBC53C6C7F08ED66F5F3AEB0F0 /* Array+Extensions.swift */,
+				AAC96802009F226C9DD067384B8C83FE /* Ex_Device.swift */,
+				AAC946E041D0CCEBD493C112CFA45F66 /* Ex_NSObject.swift */,
+				3EE7CB25A9756C78ECD87F682C2FEFD4 /* Ex_String.swift */,
+				36A958513D81C918404ABD18063C40C1 /* Ex_UIColor.swift */,
+				40D7D9A8E12B8D5C87A918830C57DCA9 /* GlobalFunction.swift */,
+				4D9B53CE1DEB0DADB515F311AED4DC48 /* UIAlertControllerExtensions.swift */,
+				7AE89C9DFED51B4927BD431C902CABCB /* UIImage+VisionDetection.swift */,
+				1F854EE943BF5B3836EF1415447929D6 /* UIImageExtensions.swift */,
+>>>>>>> Stashed changes
+			);
+			name = WpExtension;
+			path = DQCommonTool/Classes/WpExtension;
+			sourceTree = "<group>";
+		};
+<<<<<<< Updated upstream
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+=======
+		8E3D6C6F2A94170ACBF9DB586B377C97 /* DQLaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1EA1F6CC35DCFC1F18286E15E3CF7CFA /* DQLaunchScreen.swift */,
+			);
+			name = DQLaunchScreen;
+			path = DQCommonTool/Classes/DQLaunchScreen;
+			sourceTree = "<group>";
+		};
+		A04AA5C10D102A6367EF59E7C50B705D /* Pods-DQCommonTool_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE90376B0F1D9B5E8AA3831EBDA1C6 /* Pods-DQCommonTool_Example.modulemap */,
+				74B901CC04663D042C275736A04437F1 /* Pods-DQCommonTool_Example-acknowledgements.markdown */,
+				BAE7EAA67F00F884F015A80D4A40C922 /* Pods-DQCommonTool_Example-acknowledgements.plist */,
+				F92E8FC7EBF85075C45C15C54A4041A7 /* Pods-DQCommonTool_Example-dummy.m */,
+				A5D1DD256AD717CA24D33C08B94A667D /* Pods-DQCommonTool_Example-frameworks.sh */,
+				F8D6EA89A01A08E5DBC650A7FFBC5F47 /* Pods-DQCommonTool_Example-Info.plist */,
+				D6B14680C96A120621AA08D8896DBB18 /* Pods-DQCommonTool_Example-umbrella.h */,
+				B706EC06A2207E1DD651B5F45E1E85D3 /* Pods-DQCommonTool_Example.debug.xcconfig */,
+				89416B4E477373740BE6493E6F5E45A9 /* Pods-DQCommonTool_Example.release.xcconfig */,
+			);
+			name = "Pods-DQCommonTool_Example";
+			path = "Target Support Files/Pods-DQCommonTool_Example";
+>>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
 		C17E9A99BCD2380010F68FA3A2FB6C18 /* Support Files */ = {
@@ -295,6 +491,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		D329C517DAE9FFDA2E638542ABCF2C53 /* WpExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +516,24 @@
 			);
 			name = DQPageController;
 			path = DQCommonTool/Classes/DQPageController;
+=======
+		D63345A35A621E7DA985A7295073F8CB /* DQPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				2B7A1C571D35E0430FA9A30F6DE67A5C /* DQPermissions.swift */,
+			);
+			name = DQPermissions;
+			path = DQCommonTool/Classes/DQPermissions;
+			sourceTree = "<group>";
+		};
+		E4427B9273AC1FC82AF3C6704D8ED56B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C4F10CE2EEE8E72F42B876CA014CE /* Assets.swift */,
+			);
+			name = Managers;
+			path = Managers;
+>>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
 		F26F6FB791451375D6C1CAE3D0DE7B09 /* Products */ = {
@@ -413,7 +628,11 @@
 			buildConfigurationList = 56B5DD4DF014FF7F058704A7CE2DEB03 /* Build configuration list for PBXNativeTarget "DQCommonTool" */;
 			buildPhases = (
 				C789AEFF37FCDF12A1887EF2A3CF1376 /* Headers */,
+<<<<<<< Updated upstream
 				077587558B3BDFF67B5F0687B91382CB /* Sources */,
+=======
+				16CC6EE7E8ABD21FF02D53E087DE716E /* Sources */,
+>>>>>>> Stashed changes
 				F0C5BA224102525870300463211E31CD /* Frameworks */,
 				466BABC417446E48823F28D4B0B681F5 /* Resources */,
 			);
@@ -480,6 +699,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< Updated upstream
 		077587558B3BDFF67B5F0687B91382CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,6 +721,29 @@
 				F030E80527CB6960CB9D4819E098E4B9 /* UIAlertControllerExtensions.swift in Sources */,
 				E443F9AD03E983974E88BBEEE77EB2A8 /* UIImage+VisionDetection.swift in Sources */,
 				1D73F5FC98D63F367129175F92288FBE /* UIImageExtensions.swift in Sources */,
+=======
+		16CC6EE7E8ABD21FF02D53E087DE716E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				869A58B88EC60AC3A2D2F5074DBF6101 /* Array+Extensions.swift in Sources */,
+				D0AA039282399F952369292DF0C514F1 /* Assets.swift in Sources */,
+				7C686A21844D078360F8CA789E58C7F1 /* DatePickerViewController.swift in Sources */,
+				A29F5FAE7FC604450943E1D4D77B9269 /* DQCodableFile.swift in Sources */,
+				397342FCAA276CB6BB80D1AB665B1D15 /* DQCommonTool-dummy.m in Sources */,
+				B81336F56D2A2DDBE36062519D24F2D8 /* DQLaunchScreen.swift in Sources */,
+				7141C5D58CFC8327AA533E261C825AC4 /* DQPermissions.swift in Sources */,
+				98818646354D5D121B3258FB41321E69 /* Ex_Device.swift in Sources */,
+				5A8327F879217DEA995F2A56F307A807 /* Ex_NSObject.swift in Sources */,
+				64BE2BE8C6B48287D85B3EAAABEBF544 /* Ex_String.swift in Sources */,
+				97811F18F5797A2775F1638925372DB6 /* Ex_UIColor.swift in Sources */,
+				31DB4292BD82DEEEDCE9F3C8CF22A751 /* GlobalFunction.swift in Sources */,
+				5791D4F920F6B053E632CFB9A7FC6610 /* PhotoLibraryPickerViewController.swift in Sources */,
+				80AF975CFC5B2E074C40882C84E3148C /* PickerViewController.swift in Sources */,
+				A36421FCE491D36FD55320FD31E2CA08 /* UIAlertControllerExtensions.swift in Sources */,
+				A1C2E2E99EA15249D77EE0CEEAF55FB3 /* UIImage+VisionDetection.swift in Sources */,
+				40CFCDD663894AA236F58E2BEA73BA45 /* UIImageExtensions.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +783,11 @@
 /* Begin XCBuildConfiguration section */
 		0EAFA72797BE36344A980D73A2FB8899 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< Updated upstream
 			baseConfigurationReference = BB858CE42EE16D624DB99FDC37126585 /* DQCommonTool.release.xcconfig */;
+=======
+			baseConfigurationReference = CB5D924545B54F0EAC063C657050B92D /* DQCommonTool.release.xcconfig */;
+>>>>>>> Stashed changes
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -666,7 +913,11 @@
 		};
 		8FBD4FC0FD93780BA543CBE12E0ACA58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< Updated upstream
 			baseConfigurationReference = 9D933A52339F54B9E4409C6DEF2B9F64 /* DQCommonTool.debug.xcconfig */;
+=======
+			baseConfigurationReference = EA29EA35A884E7BB4D0E39A773696B4A /* DQCommonTool.debug.xcconfig */;
+>>>>>>> Stashed changes
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
