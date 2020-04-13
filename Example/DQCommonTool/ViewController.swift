@@ -147,7 +147,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
                 break
             }
         } else if (indexPath.section == 2) {
-//            self.navigationController?.pushViewController(DQPageController(), animated: true);
+            self.navigationController?.pushViewController(DQPageController(), animated: true);
         }
     }
     

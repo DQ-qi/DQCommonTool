@@ -8,7 +8,28 @@
 
 import UIKit
 
-class DQPageController: UIViewController {
+// MARK: 通知的名字
+let DQPageBaseScrollStateNotification = "DQPageBaseScrollStateNotification"
+let DQPageBaseEndHeaderRefreshNotification = "DQPageBaseEndHeaderRefreshNotification"
+
+// MARK: 定义一个协议
+protocol DQPageBaseChildViewProtocol  {
+    
+    func scrollToTop()
+    
+    func beginHeaderRefresh()
+    
+}
+
+// MARK: 滚动视图支持 多个手势
+class DQPageScrollView: UIScrollView,UIGestureRecognizerDelegate {
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}
+
+public class DQPageController: UIViewController {
     
     var scrollView:DQPageScrollView = DQPageScrollView.init()
     
@@ -28,15 +49,22 @@ class DQPageController: UIViewController {
         return headerView
     }()
     
-    let muArrCtl:[DQPageChildViewController] = [DQPageChildViewController(),DQPageChildViewController(),DQPageChildViewController(),DQPageChildViewController()]
+    var muArrCtl:[DQPageChildViewController] = [DQPageChildViewController]()
     
     var canContentContainerScroll = true
     
-    override func viewDidLoad() {
+    var selectIndex = 0
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-       
+        var muArr = [DQPageChildViewController]()
+        for i in 0..<4 {
+            let pageChildVc = DQPageChildViewController()
+            pageChildVc.index = i
+            muArr.append(pageChildVc)
+        }
+        self.muArrCtl = muArr
         self.scrollView.delegate = self
         self.view.addSubview(self.scrollView)
         if #available(iOS 11, *) {
@@ -45,50 +73,22 @@ class DQPageController: UIViewController {
             self.automaticallyAdjustsScrollViewInsets = false
         }
         
-        //        self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        ////        self.scrollView.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
-        //        self.scrollView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
-        //
-        //        self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         self.scrollView.backgroundColor = UIColor.lightGray
         self.scrollView.frame = CGRect.init(x: 0, y: 86, width: self.view.frame.size.width, height: self.view.frame.size.height-86)
         self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
                self.scrollView.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
                self.scrollView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
         self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        
         self.headerView.translatesAutoresizingMaskIntoConstraints = false
         self.scrollView.addSubview(self.headerView)
         self.headerView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 200)
         self.headerView.topAnchor.constraint(equalTo: self.scrollView.topAnchor).isActive = true
         self.headerView.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
         self.headerView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
-        
         self.headerView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        
-        
         self.setTitltView.frame = CGRect.init(x: 0, y: 200, width: self.view.frame.self.width, height: 40)
         self.scrollView.addSubview(self.setTitltView)
-//         return
-//        self.setTitltView.frame = CGRect.init(x: 0, y: 200, width: self.view.frame.size.width, height: 40)
-//        self.scrollView.addSubview(self.setTitltView)
-//        
-//        self.setTitltView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor).isActive = true
-//        self.setTitltView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
-//        self.setTitltView.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
-//        self.setTitltView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-//        let v = UIView()
-//        v.backgroundColor = UIColor.red
-//        v.frame = CGRect.init(x: 0, y: 240, width: self.view.frame.size.width, height: self.view.frame.size.height-40-64)
-//        self.scrollView.addSubview(v)
-//
-//        v.topAnchor.constraint(equalTo: self.setTitltView.bottomAnchor).isActive = true
-//        v.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
-//        v.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
-//        v.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
-//
-//        return
+
         self.pageController.delegate = self
         self.pageController.dataSource = self
         self.addChild(self.pageController)
@@ -99,7 +99,6 @@ class DQPageController: UIViewController {
         self.pageController.view.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor).isActive = true
         self.pageController.view.centerXAnchor.constraint(equalTo:self.scrollView.centerXAnchor).isActive = true
         self.pageController.view.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
-//        self.pageController.view.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1, constant: 40).isActive = true
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.init(DQPageBaseScrollStateNotification), object: nil, queue: nil) { (notifi) in
             self.canContentContainerScroll = true
@@ -111,6 +110,7 @@ class DQPageController: UIViewController {
         
         dq_showChildViewControllerAtIndex(index: 0)
         self.setTitltView.selectTitleClosure = { (selectIndex) in
+            self.selectIndex = selectIndex
             self.dq_showChildViewControllerAtIndex(index: selectIndex)
         }
     }
@@ -143,16 +143,12 @@ class DQPageController: UIViewController {
 
 extension DQPageController: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       
-        
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let navigationBarFrame = self.navigationController?.navigationBar.frame {
             let navigationBarHeight =  navigationBarFrame.origin.y+navigationBarFrame.size.height
             let offsetThreshold:CGFloat = 200+86-navigationBarHeight
-
-
-
-
+            
+            // 当固定视图滚动的区域大于自己的区域 父滚动视图固定 自己不能滚动 同时告诉子的滚动视图可以滚动
             if (scrollView.contentOffset.y >= offsetThreshold) {
                 scrollView.setContentOffset(CGPoint.init(x: 0, y: offsetThreshold), animated: false)
                 canContentContainerScroll = false
@@ -165,11 +161,9 @@ extension DQPageController: UIScrollViewDelegate {
                 }
             }
         }
-    
-        
     }
     
-    func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+    public func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
         self.muArrCtl.forEach { (vc) in
             vc.scrollToTop()
         }
@@ -180,12 +174,13 @@ extension DQPageController: UIScrollViewDelegate {
 
 extension DQPageController: UIPageViewControllerDelegate,UIPageViewControllerDataSource {
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    // MARK: 左滑
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let index = self.muArrCtl.firstIndex { (pageVc) -> Bool in
             return pageVc == viewController
         }
-        if let index = index,index<self.muArrCtl.count-1 {
-            if (index==0) {
+        if let index = index {
+            if (index<=0) {
                 return nil
             }
             return self.muArrCtl[index-1]
@@ -193,17 +188,21 @@ extension DQPageController: UIPageViewControllerDelegate,UIPageViewControllerDat
         return viewController
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    // MARK: 右滑
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let index = self.muArrCtl.firstIndex { (pageVc) -> Bool in
             return pageVc == viewController
         }
-        if let index = index,index<self.muArrCtl.count-1 {
+        if let index = index {
+            if (index>=self.muArrCtl.count-1) {
+                return nil
+            }
             return self.muArrCtl[index+1]
         }
         return viewController
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         guard let currentVc = self.pageController.viewControllers?.last  else {
             return
         }
@@ -211,10 +210,10 @@ extension DQPageController: UIPageViewControllerDelegate,UIPageViewControllerDat
             return pageVc == currentVc
         }
         if let currentIndex = currentIndex {
+            self.selectIndex = currentIndex
             self.setTitltView.dq_setSelectFunction(index: currentIndex)
         }
     }
-    
 }
 
 class DQPageChildViewController: DQPageBaseChildViewController,UITableViewDataSource,UITableViewDelegate {
@@ -231,18 +230,18 @@ class DQPageChildViewController: DQPageBaseChildViewController,UITableViewDataSo
         return tableView
     }()
     
+    var index = 0;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.tableView)
         self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: UIScreen.main.bounds.size.height-86-40)
-        //self.view.bounds
-    }
-    
-    override func scrollToTop() {
-        self.tableView.setContentOffset(CGPoint.zero, animated: false)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (index==0) {
+            return 3
+        }
         return 30
     }
     
@@ -251,17 +250,22 @@ class DQPageChildViewController: DQPageBaseChildViewController,UITableViewDataSo
         if (cell == nil) {
             cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
         }
-        cell?.textLabel?.text = "cell indexPath.row: "+"\(indexPath.row)"
+        cell?.textLabel?.text = "view: "+"\(index)"+" cell indexPath.row: "+"\(indexPath.row)"
         return cell!
     }
     
 }
 
-class DQPageScrollView: UIScrollView,UIGestureRecognizerDelegate {
+extension DQPageChildViewController: DQPageBaseChildViewProtocol {
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
+    func scrollToTop() {
+           
     }
+       
+    func beginHeaderRefresh() {
+        NotificationCenter.default.post(name: NSNotification.Name.init(DQPageBaseEndHeaderRefreshNotification), object: nil)
+    }
+    
 }
 
 
@@ -292,7 +296,6 @@ class DQPageSegTitleView: UIView {
 //        fatalError("init(coder:) has not been implemented")
     }
     
-    
     private func dq_setup() {
         guard let titles = self.titles else {
             return;
@@ -309,7 +312,6 @@ class DQPageSegTitleView: UIView {
             btn.setTitle(title, for: .normal)
             btn.setTitleColor(UIColor.black, for: .selected)
             btn.setTitleColor(UIColor.lightGray, for: .normal)
-//            btn.setTitleColor(UIColor.red, for: .highlighted)
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 17);
             btn.tag = 1000+i
             self.addSubview(btn)
@@ -348,9 +350,7 @@ class DQPageSegTitleView: UIView {
     }
 }
 
-let DQPageBaseScrollStateNotification = "DQPageBaseScrollStateNotification"
-let DQPageBaseEndHeaderRefreshNotification = "DQPageBaseEndHeaderRefreshNotification"
-
+// MARK: 滚动的基类
 class DQPageBaseChildViewController: UIViewController {
     
     var isCanContentScroll: Bool = false
@@ -360,24 +360,16 @@ class DQPageBaseChildViewController: UIViewController {
         self.isCanContentScroll = false
     }
     
-    func scrollToTop() {
-        
-    }
-    
-    func beginHeaderRefresh() {
-        NotificationCenter.default.post(name: NSNotification.Name.init(DQPageBaseEndHeaderRefreshNotification), object: nil)
-    }
-    
-    
-    
 }
+
 extension DQPageBaseChildViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (!self.isCanContentScroll) {
+        if (!self.isCanContentScroll) {//不能滚动定在原始位置
             scrollView.setContentOffset(CGPoint.zero, animated: false)
         }
         if (scrollView.contentOffset.y<=0) {
             self.isCanContentScroll = false
+            // 滚动到超过了自己的滚动区域 发送通知给父的滚动视图 同时自己固定在0,0
             scrollView.setContentOffset(CGPoint.zero, animated: false)
             NotificationCenter.default.post(name: NSNotification.Name.init(DQPageBaseScrollStateNotification), object: nil)
         }
