@@ -23,9 +23,8 @@ or pod 'DQCommonTool',:git=>'https://github.com/DQ-qi/DQCommonTool'
 ## DQLaunchScreen 
 控制App启动页 实现App加载无切换效果
 
-##作者 
-
-DQ-qi, 15013781186@163.com
+## 作者
+DQ-qi，15013781186 @ 163.com
 
 ## License
 
