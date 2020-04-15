@@ -11,14 +11,21 @@ import DQCommonTool
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var testBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(tableView)
         self.title = "DQCommonTool"
         
+        self.view.bringSubviewToFront(self.testBtn)
         
     }
     
+    @IBAction func menuAction(_ sender: UIButton) {
+        let editMenu = DQEditToolMenu.init(frame: UIScreen.main.bounds)
+        editMenu.showAnimation(view: sender)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -148,6 +155,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
             }
         } else if (indexPath.section == 2) {
             self.navigationController?.pushViewController(DQPageController(), animated: true);
+        } else if (indexPath.section == 3) {
+            
         }
     }
     
@@ -158,7 +167,8 @@ class ViewModel {
     var dataArr = [
         ["请选择时间","请选择年月日","请选择日期时分","请选择时分"],
         ["性别选择"],
-        ["分页控制器"]
+        ["分页控制器"],
+        ["弹框"]
     ]
     
 }

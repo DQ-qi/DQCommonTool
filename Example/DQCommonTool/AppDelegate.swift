@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
 //        DQLaunchScreen.
-        launchScreen.showFunction()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-            self.launchScreen.dissFunction()
-        }
+//        launchScreen.showFunction()
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+//            self.launchScreen.dissFunction()
+//        }
         
         return true
     }
