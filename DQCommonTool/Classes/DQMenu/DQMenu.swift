@@ -115,9 +115,10 @@ public class DQEditToolMenu: UIView,DQToolMenuProtocol {
             self.addSubview(self.contentView)
             self.layer.addSublayer(drawArrowLayer(location: CGPoint.init(x: loactionRect.origin.x-10, y: loactionRect.origin.y-loaction_y+height/2.0)))
             window.addSubview(self)
-            self.alpha = 1;
+            self.alpha = 0
             self.contentView.frame = CGRect.init(x:loactionRect.origin.x-10, y: loactionRect.origin.y-loaction_y+height/2.0, width: 0, height: 0)
             UIView.animate(withDuration: 0.25, animations: {
+                self.alpha = 1
                 self.contentView.frame = CGRect.init(x:loactionRect.origin.x-10-self.width, y: loactionRect.origin.y-loaction_y, width: self.width, height: self.height)
             }) { (state) in
                 self.dq_setContentView()
