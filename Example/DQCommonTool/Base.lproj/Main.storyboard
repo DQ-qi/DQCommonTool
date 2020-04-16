@@ -36,9 +36,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-JV-lQ3">
-                                <rect key="frame" x="288" y="332" width="46" height="30"/>
+                                <rect key="frame" x="296" y="332" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.27450980390000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="菜单">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="menuAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uNM-3Q-QcA"/>
                                 </connections>
